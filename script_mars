@@ -27,7 +27,7 @@ stage ('Inscription vol') {
             script {
                 def name = "${params.NAME}"
                 def sex = "${params.SEX}"
-                if(sex == "Male") {
+                if(sex == "MALE") {
                 echo "Mr. $name est inscrit au vol"
                         }
                 else {
