@@ -40,8 +40,7 @@ stage('Inscription vol') {
 
 steps {
 
-  echo 'Building app...'
-  echo "promouvoir les 
+  echo 'Building app page de reservation premiere classe'
 
 sleep 1
 
