@@ -21,6 +21,22 @@ parameters {
 }
 
 stages {
+    stage('Printing name') {
+        steps {
+            script {
+                def name = "${params.NAME}"
+                def sex = "${params.SEX}"
+                if(sex == "Male") {
+                echo "Mr. $name"
+                        }
+                else {
+                echo "Mrs. $name"
+                }
+            }
+        }
+    }
+
+stages {
 
   stage ('BUILD') {
 
@@ -32,3 +48,8 @@ steps {
 sleep 1
 
   echo 'Build OK!'
+  }
+}
+ 
+ 
+  
