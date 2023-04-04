@@ -22,12 +22,26 @@ parameters {
 
 stages {
 
+stage('Inscription vol') {
+        steps {
+            script {
+                def name = "${params.NAME}"
+                def sex = "${params.SEX}"
+                if(sex == "Male") {
+                echo "Mr. $name est inscrit au vol"
+                        }
+                else {
+                echo "Mrs. $name est inscrite au vol"
+                }
+            }
+
   stage ('BUILD') {
 
 
 steps {
 
   echo 'Building app...'
+  echo "promouvoir les 
 
 sleep 1
 
@@ -36,11 +50,14 @@ sleep 1
    }
      stage('Test') {
             steps {
-                echo 'Testing'
+                echo 'Test de la maintenance concentration des reservoirs de carburant a plus de 250PPM'
+                echo 'Test réduction de chargement des listes de vol demandees a <0.45 secondes'
+                echo 'Test réduction conso globale carburant de 1%'
             }
         }
         stage('DEPLOY') {
             steps {
+                echo 'Mise a jour de la plage de dates pour inclure dates de lancement mars 2050'
                 echo 'Mise en Production'
             }
         }
