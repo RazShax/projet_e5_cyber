@@ -48,6 +48,7 @@ steps {
 sleep 1
 
   echo 'Build OK!'
+    }
    }
   }
  }
