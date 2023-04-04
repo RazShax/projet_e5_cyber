@@ -48,5 +48,15 @@ sleep 1
   echo 'Build OK!'
     }
    }
+     stage('Test') {
+            steps {
+                echo 'Testing'
+            }
+        }
+        stage('DEPLOY') {
+            steps {
+                echo 'Mise en Production'
+            }
+        }
   }
  }
