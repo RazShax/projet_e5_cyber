@@ -20,6 +20,7 @@ parameters {
 
 }
 
+stages {
 
   stage ('BUILD') {
 
@@ -44,3 +45,4 @@ sleep 1
             }
         }
   }
+}
