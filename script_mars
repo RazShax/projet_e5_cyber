@@ -36,8 +36,6 @@ stages {
         }
     }
 
-stages {
-
   stage ('BUILD') {
 
 
@@ -52,4 +50,3 @@ sleep 1
    }
   }
  }
-}
