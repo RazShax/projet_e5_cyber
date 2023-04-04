@@ -22,6 +22,20 @@ parameters {
 
 stages {
 
+stage ('Inscription vol') {
+        steps {
+            script {
+                def name = "${params.NAME}"
+                def sex = "${params.SEX}"
+                if(sex == "Male") {
+                echo "Mr. $name est inscrit au vol"
+                        }
+                else {
+                echo "Mrs. $name est inscrite au vol"
+                }
+            }
+          }
+
 
   stage ('BUILD') {
 
