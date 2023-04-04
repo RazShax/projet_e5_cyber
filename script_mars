@@ -33,7 +33,7 @@ stage ('Inscription vol') {
                 else {
                 echo "Mrs. $name est inscrite au vol"
                 }
-            }
+            
      
 
 
