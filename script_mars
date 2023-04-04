@@ -33,10 +33,9 @@ stage ('Inscription vol') {
                 else {
                 echo "Mrs. $name est inscrite au vol"
                 }
-               }
-              }
-            
-     
+            }
+        }
+    }          
 
 
   stage ('BUILD') {
@@ -62,8 +61,7 @@ sleep 1
             steps {
                 echo 'Mise a jour de la plage de dates pour inclure dates de lancement mars 2050'
                 echo 'Mise en Production'
-            }
-        }
-  }
+    }
+}
 }
 }
