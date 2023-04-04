@@ -34,6 +34,7 @@ stage ('Inscription vol') {
                 echo "Mrs. $name est inscrite au vol"
                 }
                }
+              }
             
      
 
@@ -64,7 +65,6 @@ sleep 1
             }
         }
   }
-}
 }
 }
 }
