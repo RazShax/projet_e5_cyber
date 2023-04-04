@@ -20,21 +20,6 @@ parameters {
 
 }
 
-stages {
-    stage('Printing name') {
-        steps {
-            script {
-                def name = "${params.NAME}"
-                def sex = "${params.SEX}"
-                if(sex == "Male") {
-                echo "Mr. $name"
-                        }
-                else {
-                echo "Mrs. $name"
-                }
-            }
-        }
-    }
 
   stage ('BUILD') {
 
